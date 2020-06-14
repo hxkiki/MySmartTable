@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MySmartTable.iml" filepath="$PROJECT_DIR$/.idea/modules/MySmartTable.iml" group="MySmartTable" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MySmartTable-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MySmartTable-app.iml" group="MySmartTable/app" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/form/com.github.hxkiki-form.iml" filepath="$PROJECT_DIR$/.idea/modules/form/com.github.hxkiki-form.iml" group="MySmartTable/form" />
       <module fileurl="file://$PROJECT_DIR$/form/form.iml" filepath="$PROJECT_DIR$/form/form.iml" />
       <module fileurl="file://$PROJECT_DIR$/smartTable.iml" filepath="$PROJECT_DIR$/smartTable.iml" />
     </modules>

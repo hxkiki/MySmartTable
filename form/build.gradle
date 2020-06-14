@@ -1,7 +1,7 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 
-group='com.github.huangyanbin'
+group='com.github.hxkiki'
 
 android {
     compileSdkVersion 25
@@ -57,3 +57,4 @@ artifacts {
 
 dependencies {
 }
+

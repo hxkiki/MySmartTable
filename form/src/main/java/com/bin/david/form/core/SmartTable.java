@@ -57,6 +57,12 @@ public class SmartTable<T> extends View implements OnTableChangeListener {
     private AtomicBoolean isNotifying = new AtomicBoolean(false); //是否正在更新数据
     private boolean isYSequenceRight;
 
+    //改动内容,增加是否支持竖向滑动
+    private boolean canVerticalScroll = true;
+    public void setCanVerticalScroll(boolean canVerticalScroll) {
+        this.canVerticalScroll = canVerticalScroll;
+    }
+
 
     public SmartTable(Context context) {
         super(context);
@@ -299,7 +305,10 @@ public class SmartTable<T> extends View implements OnTableChangeListener {
                 int screenHeight = dm.heightPixels;
                 int maxWidth = screenWidth - realSize[0];
                 int maxHeight = screenHeight - realSize[1];
-                defaultHeight = Math.min(defaultHeight, maxHeight);
+
+                if (canVerticalScroll) {
+                    defaultHeight = Math.min(defaultHeight, maxHeight);
+                }
                 defaultWidth = Math.min(defaultWidth, maxWidth);
                 //Log.e("SmartTable","old defaultHeight"+this.defaultHeight+"defaultWidth"+this.defaultWidth);
                 if (this.defaultHeight != defaultHeight
